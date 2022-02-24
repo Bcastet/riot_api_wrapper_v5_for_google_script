@@ -348,7 +348,6 @@ function search(tree,id){
 }
 
 function getElo(summoner){
-  var api_key = "?api_key=RGAPI-de025284-d4e8-4500-8131-5f72a5152abd";
   var request = "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/" + summoner.id + api_key;
   var result = jsonRequestRiot(request)
   for(var index in result){
